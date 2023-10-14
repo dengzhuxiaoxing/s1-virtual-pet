@@ -37,12 +37,12 @@ public class VirtualPet {
            
         }
        if(hunger > 10){
-         face.diedPet();
+         diePet();
        }
     }
 
-   public void diedPet(){
-      face.setImage("died");
+   public void diePet(){
+      face.setImage("dead");
       hunger = 0;
       tiredness = 0;
    }
@@ -51,7 +51,7 @@ public class VirtualPet {
         hunger = hunger + 1;
         face.setImage("asleep");
        if(hunger > 10){
-         face.diedPet();
+         diePet();
        }
     }
 
