@@ -36,11 +36,23 @@ public class VirtualPet {
             face.setImage("ecstatic");
            
         }
+       if(hunger > 10){
+         face.diedPet();
+       }
     }
+
+   public void diedPet(){
+      face.setImage("died");
+      hunger = 0;
+      tiredness = 0;
+   }
    
     public void sleep() {
         hunger = hunger + 1;
         face.setImage("asleep");
+       if(hunger > 10){
+         face.diedPet();
+       }
     }
 
 
