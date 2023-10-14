@@ -1,7 +1,7 @@
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 
-Maka
+//Maka
 
 
 public class Runner {
