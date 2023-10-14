@@ -2,7 +2,7 @@ import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 
 
-1
+
 
 public class Runner {
     public static void main(String[] args) {
